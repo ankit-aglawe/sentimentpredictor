@@ -1,10 +1,14 @@
 [tool.poetry]
 name = "sentimentpredictor"
-version = "0.1.0"
+version = "0.1.2"
 description = "A flexible sentiment analysis predictor package supporting multiple pre-trained models, customizable preprocessing, visualization tools, fine-tuning capabilities, and seamless integration with pandas DataFrames."
 authors = ["ankit-aglawe <aglawe.ankit@gmail.com>"]
 license = "MIT"
 readme = "README.md"
+homepage = "https://github.com/ankit-aglawe/sentimentpredictor"
+repository = "https://github.com/ankit-aglawe/sentimentpredictor"
+keywords = ["sentiment analysis", "text analysis", "machine learning", "NLP", "transformers", "data science", "pre-trained models", "text mining"]
+
 
 [tool.poetry.dependencies]
 python = "^3.9"
@@ -23,3 +27,12 @@ pytest = "^8.2.2"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+sentimentpredictor = "sentimentpredictor:main"
+
+[tool.poetry.urls]
+"Documentation" = "https://github.com/ankit-aglawe/sentimentpredictor#readme"
+"Changelog" = "https://github.com/ankit-aglawe/sentimentpredictor/releases"
+"Source" = "https://github.com/ankit-aglawe/sentimentpredictor"
+"Tracker" = "https://github.com/ankit-aglawe/sentimentpredictor/issues"

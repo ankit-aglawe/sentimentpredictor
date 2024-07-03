@@ -143,10 +143,23 @@ Run the tests using pytest:
 poetry run pytest
 ```
 
-### License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgements
 
 This package uses pre-trained models from the [Hugging Face Transformers library](https://github.com/huggingface/transformers).
+
+
+## Contributing
+
+Contributions are welcome! Please see the [CONTRIBUTING](CONTRIBUTING.md) file for guidelines on how to contribute to this project.
+
+
+## Links
+
+- [Documentation](https://github.com/ankit-aglawe/sentimentpredictor#readme)
+- [PyPI](https://pypi.org/project/sentimentpredictor/)
+- [Source Code](https://github.com/ankit-aglawe/sentimentpredictor)
+- [Issue Tracker](https://github.com/ankit-aglawe/sentimentpredictor/issues)
