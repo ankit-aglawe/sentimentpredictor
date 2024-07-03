@@ -3,12 +3,12 @@
 
 import pandas as pd
 import pytest  # type: ignore
-from sentimentclassifier import DataFrameSentimentClassifier, SentimentClassifier
+from sentimentpredictor import DataFrameSentimentPredictor, SentimentPredictor
 
 
 @pytest.fixture
 def classifier():
-    return SentimentClassifier()
+    return SentimentPredictor()
 
 
 def test_single_prediction(classifier):
@@ -28,7 +28,7 @@ def test_batch_prediction(classifier):
 
 def test_dataframe_integration():
     df = pd.DataFrame({"text": ["I am very happy today!", "I hate this."]})
-    df_classifier = DataFrameSentimentClassifier()
+    df_classifier = DataFrameSentimentPredictor()
     df = df_classifier.classify_dataframe(df, "text")
     assert "sentiment" in df.columns
     assert df["sentiment"].iloc[0] in df_classifier.classifier.labels.values()

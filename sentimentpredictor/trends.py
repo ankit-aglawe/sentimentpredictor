@@ -1,11 +1,11 @@
-# sentimentclassifier/trends.py
+# sentimentpredictor/trends.py
 # Author: Ankit Aglawe
 
 
 import matplotlib.pyplot as plt
 
-from sentimentclassifier.classifier import SentimentClassifier
-from sentimentclassifier.logger import get_logger
+from sentimentpredictor.logger import get_logger
+from sentimentpredictor.predictor import SentimentPredictor
 
 logger = get_logger(__name__)
 
@@ -24,7 +24,7 @@ class SentimentAnalysisTrends:
             model_name (str): The name of the model to use.
         """
         try:
-            self.classifier = SentimentClassifier(model_name=model_name)
+            self.classifier = SentimentPredictor(model_name=model_name)
             logger.info(f"Initialized SentimentAnalysisTrends with model {model_name}")
         except Exception as e:
             logger.error(f"Error initializing SentimentAnalysisTrends: {e}")

@@ -1,9 +1,8 @@
-# sentimentclassifier/fine_tune.py
 # Author: Ankit Aglawe
 
 from transformers import Trainer, TrainingArguments
 
-from sentimentclassifier.logger import get_logger
+from sentimentpredictor.logger import get_logger
 
 logger = get_logger(__name__)
 

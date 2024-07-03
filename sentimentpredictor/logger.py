@@ -1,4 +1,4 @@
-# sentimentclassifier/logger.py
+# sentimentpredictor/logger.py
 # Author: Ankit Aglawe
 
 import logging

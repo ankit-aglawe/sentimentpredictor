@@ -1,10 +1,10 @@
-# sentimentclassifier/visualization.py
+# sentimentpredictor/visualization.py
 # Author: Ankit Aglawe
 
 
 import matplotlib.pyplot as plt
 
-from sentimentclassifier.logger import get_logger
+from sentimentpredictor.logger import get_logger
 
 logger = get_logger(__name__)
 

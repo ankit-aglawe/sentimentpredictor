@@ -1,8 +1,8 @@
-# Sentiments/utils.py
+# sentimentpredictor/utils.py
 # Author: Ankit Aglawe
 
 
-from sentimentclassifier.logger import get_logger
+from sentimentpredictor.logger import get_logger
 
 logger = get_logger(__name__)
 

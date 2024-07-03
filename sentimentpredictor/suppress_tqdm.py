@@ -1,4 +1,4 @@
-# sentimentclassifier/suppress_tqdm.py
+# sentimentpredictor/suppress_tqdm.py
 # Author: Ankit Aglawe
 
 
@@ -6,7 +6,7 @@ import os
 import sys
 from contextlib import contextmanager
 
-from sentimentclassifier.logger import get_logger
+from sentimentpredictor.logger import get_logger
 
 logger = get_logger(__name__)
 

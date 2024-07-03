@@ -1,9 +1,9 @@
-# sentimentclassifier/preprocess.py
+# sentimentpredictor/preprocess.py
 # Author: Ankit Aglawe
 
 import re
 
-from sentimentclassifier.logger import get_logger
+from sentimentpredictor.logger import get_logger
 
 logger = get_logger(__name__)
 

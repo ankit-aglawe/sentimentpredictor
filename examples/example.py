@@ -2,13 +2,13 @@
 # Author: Ankit Aglawe
 
 import pandas as pd
-from sentimentclassifier import DataFrameSentimentClassifier, SentimentClassifier
-from sentimentclassifier.trends import SentimentAnalysisTrends
-from sentimentclassifier.visualization import plot_sentiment_distribution
+from sentimentpredictor import DataFrameSentimentPredictor, SentimentPredictor
+from sentimentpredictor.trends import SentimentAnalysisTrends
+from sentimentpredictor.visualization import plot_sentiment_distribution
 
 
 def main():
-    classifier = SentimentClassifier()
+    classifier = SentimentPredictor()
 
     text = "I am very happy today!"
     result = classifier.predict(text)
@@ -27,7 +27,7 @@ def main():
     plot_sentiment_distribution(result["probabilities"], classifier.labels.values())
 
     df = pd.DataFrame({"text": ["I am very happy today!", "I hate this."]})
-    df_classifier = DataFrameSentimentClassifier()
+    df_classifier = DataFrameSentimentPredictor()
     df = df_classifier.classify_dataframe(df, "text")
     print("\nDataFrame Sentiment Classification:")
     print(df)

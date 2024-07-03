@@ -1,10 +1,11 @@
 # sentimentclassifier/cli.py
 # Author: Ankit Aglawe
 
+
 import click
 
-from sentimentclassifier.classifier import SentimentClassifier
-from sentimentclassifier.logger import get_logger
+from sentimentpredictor.logger import get_logger
+from sentimentpredictor.predictor import SentimentPredictor
 
 logger = get_logger(__name__)
 
@@ -24,8 +25,8 @@ def classify_text(model, text):
         text (str): The text to classify.
     """
     try:
-        classifier = SentimentClassifier(model_name=model)
-        result = classifier.predict(text)
+        predictor = SentimentPredictor(model_name=model)
+        result = predictor.predict(text)
         click.echo(f"Sentiment: {result['label']}")
         click.echo(f"Confidence: {result['confidence']}")
     except Exception as e:

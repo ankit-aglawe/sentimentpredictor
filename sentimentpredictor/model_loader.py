@@ -1,11 +1,11 @@
-# sentimentclassifier/model_loader.py
+# sentimentpredictor/model_loader.py
 # Author: Ankit Aglawe
 
 
 from transformers import AutoModelForSequenceClassification, AutoTokenizer
 
-from sentimentclassifier.logger import get_logger
-from sentimentclassifier.suppress_tqdm import suppress_tqdm
+from sentimentpredictor.logger import get_logger
+from sentimentpredictor.suppress_tqdm import suppress_tqdm
 
 logger = get_logger(__name__)
 

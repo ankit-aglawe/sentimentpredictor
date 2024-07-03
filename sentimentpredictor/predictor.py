@@ -1,17 +1,17 @@
-# sentimentclassifier/classifier.py
+# sentimentpredictor/predictor.py
 # Author: Ankit Aglawe
 
 import torch
 
-from sentimentclassifier.logger import get_logger
-from sentimentclassifier.model_loader import load_model_and_tokenizer
-from sentimentclassifier.preprocess import Preprocessor
+from sentimentpredictor.logger import get_logger
+from sentimentpredictor.model_loader import load_model_and_tokenizer
+from sentimentpredictor.preprocess import Preprocessor
 
 logger = get_logger(__name__)
 
 
-class SentimentClassifier:
-    """A sentiment classifier using pre-trained models.
+class SentimentPredictor:
+    """A sentiment predictor using pre-trained models.
 
     Attributes:
         model: The pre-trained model for sentiment analysis.
@@ -21,10 +21,10 @@ class SentimentClassifier:
     """
 
     def __init__(self, model_name="roberta", suppress_output=True):
-        """Initializes the SentimentClassifier with a specified model.
+        """Initializes the SentimentPredictor with a specified model.
 
         Args:
-            model_name (str): The name of the model to use. # NOTE:  Need to add more models
+            model_name (str): The name of the model to use.
             suppress_output (bool): Whether to suppress the model download output.
         """
         try:
@@ -33,10 +33,10 @@ class SentimentClassifier:
             )
             self.preprocessor = Preprocessor()
             self.labels = self.model.config.id2label
-            logger.info(f"Initialized SentimentClassifier with model {model_name}")
+            logger.info(f"Initialized SentimentPredictor with model {model_name}")
 
         except Exception as e:
-            logger.error(f"Error initializing SentimentClassifier: {e}")
+            logger.error(f"Error initializing SentimentPredictor: {e}")
             raise
 
     def preprocess(self, text):

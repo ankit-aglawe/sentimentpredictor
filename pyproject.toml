@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "sentimentclassifier"
+name = "sentimentpredictor"
 version = "0.1.0"
-description = "A flexible sentiment analysis classifier package supporting multiple pre-trained models, customizable preprocessing, visualization tools, fine-tuning capabilities, and seamless integration with pandas DataFrames."
+description = "A flexible sentiment analysis predictor package supporting multiple pre-trained models, customizable preprocessing, visualization tools, fine-tuning capabilities, and seamless integration with pandas DataFrames."
 authors = ["ankit-aglawe <aglawe.ankit@gmail.com>"]
 license = "MIT"
 readme = "README.md"
