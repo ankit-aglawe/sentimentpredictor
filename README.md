@@ -2,6 +2,9 @@
 
 # Sentiment Analysis Predictor
 
+![Emotion Classifier Logo](https://raw.githubusercontent.com/ankit-aglawe/sentimentpredictor/main/assets/logo.png)
+
+
 A flexible sentiment analysis predictor package supporting multiple pre-trained models, customizable preprocessing, visualization tools, fine-tuning capabilities, and seamless integration with pandas DataFrames.
 
 ## Overview
